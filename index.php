@@ -15,14 +15,13 @@ if(isset($_POST['name'])){
     }
     // echo "Success connecting to the db";
 
-    // Collect post variables
-    $name = $_POST['name'];
+    // Collect post variable
     $gender = $_POST['gender'];
     $age = $_POST['age'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $desc = $_POST['desc'];
-    $sql = "INSERT INTO EASYCURE(name,  gender, AGE, phone, other, dt) VALUES ('$name', '$age', '$gender', '$email', '$phone', '$desc', current_timestamp());";
+    $weight = $_POST['weight'];
+    $blood pressure = $_POST['blood pressure'];
+    $symptoms = $_POST['symptoms'];
+    $sql = "INSERT INTO `easycure` ( `gender`, `age`, `weight`, `blood pressure`, `symptoms`) VALUES ('1', ' male', '58', '78', '226', 'ok');";
     // echo $sql;
 
     // Execute the query
