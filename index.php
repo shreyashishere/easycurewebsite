@@ -21,7 +21,7 @@ if(isset($_POST['name'])){
     $weight = $_POST['weight'];
     $blood pressure = $_POST['blood pressure'];
     $symptoms = $_POST['symptoms'];
-    $sql = "INSERT INTO `easycure` ( `gender`, `age`, `weight`, `blood pressure`, `symptoms`) VALUES ('1', ' male', '58', '78', '226', 'ok');";
+    $sql = "INSERT INTO `easycure . easycure (`s.no`, `gender`, `age`, `weight`, `blood pressure`, `symptoms`) VALUES ('', '', '', '', '', '');";
     // echo $sql;
 
     // Execute the query
@@ -117,6 +117,11 @@ if(isset($_POST['name'])){
       </nav>
     </div>
   </header>
+          <?php
+        if($insert == true){
+        echo "<p class='submitMsg'>Thanks for submitting your form. </p>";
+        }
+    ?>
 
   <div class="container">
     <form action="index.php" method="post">
