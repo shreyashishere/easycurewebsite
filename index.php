@@ -21,7 +21,7 @@ if(isset($_POST['name'])){
     $weight = $_POST['weight'];
     $blood pressure = $_POST['blood pressure'];
     $symptoms = $_POST['symptoms'];
-    $sql = "INSERT INTO `easycure . easycure (`s.no`, `gender`, `age`, `weight`, `blood pressure`, `symptoms`) VALUES ('', '', '', '', '', '');";
+   $sql = "INSERT INTO 'easycure.easycure ( `gender`, `age`, `weight`, `blood_pressure`, `symptoms`) VALUES (`$gender`, `$age`, `$weight`, `$blood_pressure`, `$symptoms`));";
     // echo $sql;
 
     // Execute the query
